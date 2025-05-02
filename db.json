@@ -1,0 +1,9 @@
+{
+  "tableData": [
+    { "id": 1, "name": "Nune", "email": "nune@example.com" },
+    { "id": 2, "name": "Aram", "email": "aram@example.com" }
+  ],
+  "projects": [
+    { "id": 1, "title": "ARMBNB", "description": "A React-based Armenian Airbnb clone." }
+  ]
+}

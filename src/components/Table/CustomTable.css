@@ -1,0 +1,106 @@
+.table-container {
+    margin: 20px;
+    
+}
+
+.table-container h2{
+    color: #0a3d62;
+    text-align: center;
+    position: relative;
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    justify-content: center; 
+  }
+  
+  .table-logo {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    position: absolute;
+  }
+
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #0a3d62;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    z-index: 9999;
+    
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #0a3d62;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Border for all cells */
+}
+
+.table th {
+    background-color: #3498db; /* Header background color */
+    color: white; /* Header text color */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Even row background color */
+}
+
+.table tbody tr:hover {
+    background-color: #ddd; /* Hover color */
+}
+.selected-row {
+    background-color: #d1ecf1 !important; /* Light turquoise */
+    color: #0a3d62;
+    font-weight: bold;
+}
+
+/* Hide the last cell's border for each row */
+/* .table tr td:last-child {
+    border-right: none;
+} */
+
+/* Add an empty cell at the end of each row to ensure consistent borders */
+/* .table tr:after {
+    content: '';
+    display: table-cell;
+    border: 1px solid #ddd;
+    width: 100%; 
+    
+} */
+
+
+
+/* Ensure that all rows have a minimum height */
+.table tbody tr td {
+    min-height: 40px; /* Adjust the minimum height as needed */
+}
